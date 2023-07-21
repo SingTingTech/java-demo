@@ -1,0 +1,8 @@
+server:
+  port: 3000
+
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
