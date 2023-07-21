@@ -1,4 +1,4 @@
-FROM maven:eclipse-temurin-17 as builder
+FROM maven:3-eclipse-temurin-17 as builder
 WORKDIR /app
 ADD . /app
 RUN --mount=type=cache,target=/root/.m2 mvn -T4 -DskipTests=true clean package
